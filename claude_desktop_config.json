@@ -1,0 +1,57 @@
+{
+  "mcpServers": {
+    "Context7": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@upstash/context7-mcp@latest"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/hyemin/thomas",
+        "/Users/hyemin/Desktop",
+        "/Users/hyemin/Downloads",
+        "/Users/hyemin"
+      ]
+    },
+    "jetbrains": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@jetbrains/mcp-proxy"
+      ]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
+    },
+    "taskmaster-ai": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "--package=task-master-ai",
+        "task-master-ai"
+      ],
+      "env": {
+        "AWS_REGION": "us-east-1",
+        "AWS_PROFILE": "default",
+        "BEDROCK_ENABLED": "true",
+        "BEDROCK_MODEL_ID": "us.anthropic.claude-sonnet-4-20250514-v1:0"
+      }
+    },
+    "mcp_server_mysql": {
+      "command": "/bin/bash",
+      "args": [
+        "/Users/hyemin/mcp-server-mysql/start-with-iam-auth.sh"
+      ]
+    }
+  },
+  "globalShortcut": ""
+}
